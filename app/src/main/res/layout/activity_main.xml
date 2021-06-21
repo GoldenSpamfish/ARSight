@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp">
+
+    </androidx.camera.view.PreviewView>
+
+    <ImageView
+        android:id="@+id/crosshair"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/enemy_goes_here"
+        android:src="@drawable/crosshairv1" />
+
+    <Button
+        android:id="@+id/windage_left"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="240dp"
+        android:text="@string/l" />
+
+    <Button
+        android:id="@+id/windage_right"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="240dp"
+        android:text="@string/r" />
+
+    <TextView
+        android:id="@+id/windage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Windage"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/elev_up"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="80dp"
+        android:text="▲" />
+
+    <Button
+        android:id="@+id/elev_down"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="80dp"
+        android:text="▼" />
+
+    <TextView
+        android:id="@+id/elevation"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-30dp"
+        android:rotation="90"
+        android:text="Elevation"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
